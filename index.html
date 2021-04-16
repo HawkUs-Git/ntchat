@@ -2,7 +2,7 @@
 <html lang='en' style='height:100%'>
 <head>
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
-    <title>Never Trust Chat</title>
+    <title>Encryptly Chat</title>
 </head>
 <body style='display:flex; flex-direction:column; height:100%; margin:0'>
     <div><h1>Encrypt Chat</h1></div>
@@ -24,7 +24,7 @@
             connection.onicegatheringstatechange = () => {
                 if (connection.iceGatheringState !== 'complete') return;
                 print('To make a connection:')
-                print('1. Send the following URL to the other person.')
+                print('1. Send the link to the person you would like to chat with.')
                 print('2. Type the result in the bottom text field.');
                 print('');
                 print(window.location.href + '#' + encodeURIComponent(JSON.stringify(connection.localDescription)));
